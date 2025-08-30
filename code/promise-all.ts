@@ -44,6 +44,16 @@ try {
 */
 
 /**
+ * SOLUTION
+ *
+ * Promises are meant to be chained, need to return a promise
+ * If the input is empty, the returned promise resolves with an empty array
+ * The returned promise contains an array of resolved values in the same order as the input if all of them are fulfilled
+ * The returned promise rejects immediately if any of the input values are rejected or throw an error
+ * The input array can contain non-promises
+ */
+
+/**
  * Using Async
  *
  * Since the function needs to return a promise we can construct a promise at the top level of the function and return it. The bulk of the code will be written within the constructor parameter.
